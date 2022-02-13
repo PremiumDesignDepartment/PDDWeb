@@ -1,0 +1,182 @@
+* {box-sizing:border-box}
+body {
+    width: 100%;
+    background-color: #051f3c;
+}
+main {
+    width: 100%;
+    font-family: "Graphie", sans-serif;
+    }
+
+nav{
+    background-color: #051f3c ; /*#008595*/
+    width: 100%;
+    display: flex;
+    max-height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-weight: bold;
+    align-items: stretch;
+    justify-content: flex-start;
+    
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a {
+    color: #B3c1cd;
+    display: block;
+    text-decoration: none;
+}
+h1{
+    font-size: 6em;
+    color: #B3c1cd;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 4em;
+    color: #B3c1cd;
+    font-style: italic;
+    margin: 0;
+}
+h3{
+    font-size: 2em;
+    color: #B3c1cd;
+}
+p{
+    font-size: 2em;
+    color: #B3c1cd;
+    margin-top: 0;
+}
+.navFlex{display: flex;}
+.mainFlex{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+}
+.folioChunk{
+    display: flex;
+    margin-top: 4em;
+    padding-bottom: 2em;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.folioChunk figure{
+    display: flex;
+    flex-direction: column;
+}
+.folioChunk img{
+    padding: 1em 5em 1em 5em;
+    width: 100%;
+    max-width: 900px;
+}
+.folioChunk h2{
+    padding-top: .75em;
+}
+.folioChunk h3{
+    margin: 0;
+}
+.btmBtn{
+    display: flex;
+}
+.btmBtn figure{
+    padding: 2em;
+}
+.btmBtn figure img{
+    transform: rotate(300deg);
+}
+#mainDiv{
+    height: 850px;
+}
+#nLS{
+    width: 5em;
+}
+
+#nLS img{
+    width: 5em;
+    padding-left: 1em;
+    padding-top: .5em;
+}
+#nMS {
+    
+}
+#nMS ul{
+    display: flex;
+    flex-basis:20%;
+    color: #B3c1cd;
+    margin: 0;
+    align-items: center;
+}
+#nMS ul li{
+    font-size: 400%;
+    border-right: 5px solid #B3c1cd;
+    border-left: 5px solid #B3c1cd;
+    padding-right: .25em;
+    padding-left: .25em;
+}
+#nMS ul li.lastLink{
+    border-left: none;
+}
+#nMS ul li a:hover{
+    font-style: italic;
+    color: #008494;
+}
+#nSS ul{
+    display: flex;
+    flex-basis:20%;
+    align-items: center;
+}
+#nSS img{
+    padding-right: .5em;
+}
+#textSect{
+    width: 50%;
+    padding-left: 1em;
+}
+#textSect figure{
+    display: flex;
+    justify-content: center;
+    padding-top: 6em;
+}
+#portFig{
+    display: flex;
+    width: 50%;
+    background-color: #051f3c;
+    justify-content: flex-end;
+    object-fit: contain;
+}
+#portFig img{
+    max-width: fit-content;
+    width: 100%;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#imgFlex{
+    
+}
+#imgFlex figure{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 2em;
+    padding: 2em;
+    width: 100%;
+}
+#imgFlex figure img{
+    width: 100%;
+    max-width: fit-content;
+}
+
+
+
