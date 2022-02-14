@@ -80,14 +80,27 @@ p{
 .folioChunk h3{
     margin: 0;
 }
+.upBtn figure{
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.upBtn img {
+    transform: rotate(300deg);
+    width: 80%;
+    height: 80%
+    margin: 0;
+}
+.upBtn figcaption{
+    color: #B3c1cd;
+    font-style: italic;
+}
 .btmBtn{
     display: flex;
 }
 .btmBtn figure{
     padding: 2em;
-}
-.btmBtn figure img{
-    transform: rotate(300deg);
 }
 #mainDiv{
     height: 850px;
@@ -100,9 +113,6 @@ p{
     width: 5em;
     padding-left: 1em;
     padding-top: .5em;
-}
-#nMS {
-    
 }
 #nMS ul{
     display: flex;
