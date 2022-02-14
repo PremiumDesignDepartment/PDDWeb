@@ -152,6 +152,14 @@ p{
     justify-content: center;
     padding-top: 6em;
 }
+#textSect h2 {
+    font-weight: normal;
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+#textSect p{
+    
+}
 #portFig{
     display: flex;
     width: 50%;
