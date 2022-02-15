@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    margin: 0;
     background-color: #051f3c;
 }
 main {
@@ -127,8 +128,18 @@ p{
 .resDiv p a {
     color: #008494;
 }
+.sPortrait{
+    display: block;
+    width: 50%;
+    
+}
+.sPortrait img{
+    display: block;
+    width: 100%;
+    margin-top: -5em;
+}
 #mainDiv{
-    height: 850px;
+
 }
 #nLS{
     width: 5em;
@@ -182,16 +193,22 @@ p{
     font-size: 3em;
     padding-bottom: .5em;
 }
+#sScreenDBtn{
+    display: none;
+}
 #portFig{
     display: flex;
     width: 50%;
     background-color: #051f3c;
     justify-content: flex-end;
-    object-fit: contain;
+}
+#portFig figure{
+    width: 100%;
 }
 #portFig img{
-    max-width: fit-content;
-    width: 100%;
+    max-width: 100%;
+    width:fit-content;
+    min-width: none;
 }
 #portfolio{
     display: flex;
@@ -214,6 +231,41 @@ p{
     width: 100%;
     max-width: fit-content;
 }
+
+
+@media all and (max-width 1186px) {
+    
+}
+/*@media all and (max-width: 1559px)  {
+    #mainDiv{
+        flex-direction: column;
+    }
+    #textSect figure{
+        display: none;
+    }
+    #lScreenDBtn{
+        display: none;
+    }
+    #sScreenDBtn{
+        display: flex;
+        order: 3;
+    }
+    .sPortrait{
+        width: 100%;
+        order: 2;
+        justify-content: flex-end;
+    }
+    .sPortrait img{
+        width: 70%;
+    }
+
+    #textSect{
+        width: 100%;
+        padding-left: 1em;
+        order: 1;
+    }
+
+}*/
 
 
 
