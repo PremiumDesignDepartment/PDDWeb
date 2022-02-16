@@ -82,9 +82,11 @@ p{
 }
 .folioChunk h2{
     padding-top: .75em;
+    text-align: center;
 }
 .folioChunk h3{
     margin: 0;
+    text-align: center;
 }
 .upBtn figure{
     display: flex;
@@ -163,6 +165,9 @@ p{
     align-items: stretch;
     justify-content: flex-start;
 }
+#mainDiv{
+    
+}
 #nLS{
     width: 5em;
 }
@@ -217,7 +222,7 @@ p{
     justify-content: center;
     padding-top: 6em;
 }
-#heading h2 {
+#textSect h2{
     font-weight: normal;
     font-size: 3em;
     padding-bottom: .5em;
@@ -278,11 +283,15 @@ p{
         flex-direction: column;
         align-items: center;
     }
+    #nav_menu ul li img{
+        display: none;
+    }
     #textSect{
         display: flex;
-        order: 3;
+        flex-direction: column;
         width: 100%;
         align-items: center;
+        order: 1;
     }
     #textSect p{
         text-align: center;
@@ -292,17 +301,18 @@ p{
     #textSect figure {
         display: none;
     }
-    #heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        order: 1;
-    }
-    h1 {font-size: 4em;}
+    h1 {
+        font-size: 4em;
+        text-align: center;
 
-    .sPortrait img{
-        order: 2;
-        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        
+
+    }
+    .sPortrait{
+        display: flex;
     }
 
     .sPortrait img{
@@ -310,9 +320,16 @@ p{
         width: 100%;
         margin-top: 0;
     }
+    #introText{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
 
     .slicknav_menu{display: block;}
-    .slicknav_menu  {background-color: #008494 !important;}
+    .slicknav_menu  {background-color: #051f3c !important;}
 
 }
 
