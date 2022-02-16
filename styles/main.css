@@ -142,9 +142,11 @@ p{
     
 }
 .sPortrait img{
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    width: 100%;
-    margin-top: -5em;
+    width: 80%;
+
 }
 .slicknav_menu{display: none;}
 .slickLogo{
@@ -155,10 +157,10 @@ p{
     max-width: 62.6px;
 }
 .toFront{
-    z-index: 2;
+    z-index: -100;
 }
 .toBack{
-    z-index: -1;
+    z-index: 200;
 }
 #mainNav{
     background-color: #051f3c ; /*#008595*/
