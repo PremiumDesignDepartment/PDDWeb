@@ -49,7 +49,16 @@ p{
     color: #B3c1cd;
     margin-top: 0;
 }
-.navFlex{display: flex;}
+.navFlex{
+    display: flex;
+}
+.navFlex ul{
+    display: flex;
+}
+.navFlexImage{
+    width: 100%;
+    padding-right: 1em;
+}
 .mainFlex{
     display: flex;
     width: 100%;
@@ -152,13 +161,13 @@ p{
 }
 #nMS ul{
     display: flex;
-    flex-basis:20%;
     color: #B3c1cd;
     margin: 0;
     align-items: center;
+    width: 100%;
 }
 #nMS ul li{
-    font-size: 400%;
+    font-size: 4em;
     border-right: 5px solid #B3c1cd;
     border-left: 5px solid #B3c1cd;
     padding-right: .25em;
@@ -173,8 +182,14 @@ p{
 }
 #nSS ul{
     display: flex;
-    flex-basis:20%;
+    justify-content: flex-start;
     align-items: center;
+}
+#nSS ul li{
+    padding-right: 1em;
+}
+#nSS{
+    width: 100%;
 }
 #nSS img{
     padding-right: .5em;
@@ -233,9 +248,16 @@ p{
 }
 
 
-@media all and (max-width 1186px) {
-    
+@media all and (max-width: 1109px){
+    #nMS ul li a{
+        font-size: .5em;
+    }
+
+    .navFlexImage{
+        padding-right: .5em;
+    }
 }
+
 /*@media all and (max-width: 1559px)  {
     #mainDiv{
         flex-direction: column;
