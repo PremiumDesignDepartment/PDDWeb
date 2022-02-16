@@ -147,6 +147,13 @@ p{
     margin-top: -5em;
 }
 .slicknav_menu{display: none;}
+.slickLogo{
+    float: left;
+    padding: 1em;
+}
+.slickLogo img{
+    max-width: 62.6px;
+}
 .toFront{
     z-index: 2;
 }
@@ -164,9 +171,6 @@ p{
     font-weight: bold;
     align-items: stretch;
     justify-content: flex-start;
-}
-#mainDiv{
-    
 }
 #nLS{
     width: 5em;
@@ -283,9 +287,6 @@ p{
         flex-direction: column;
         align-items: center;
     }
-    #nav_menu ul li img{
-        display: none;
-    }
     #textSect{
         display: flex;
         flex-direction: column;
@@ -329,7 +330,7 @@ p{
 
 
     .slicknav_menu{display: block;}
-    .slicknav_menu  {background-color: #051f3c !important;}
+    .slicknav_menu  {background-color: #051f3c  !important;}
 
 }
 

@@ -7,9 +7,9 @@
         <title>Premium Design Department</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/slicknav.css" />
         <link rel="shortcut icon" href="res/Images/nav/favicon.ico?">
         <link rel="stylesheet" href="https://use.typekit.net/voe0vir.css">
+        <link rel="stylesheet" href="styles/slicknav.css" />
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="js/jquery.slicknav.min.js"></script>
         <script>
@@ -18,8 +18,8 @@
                     label: 'PDD',
                     prependTo:"#mobile_menu",
                     closeOnClick: 'true'
-                
                 });
+                $('.slicknav_menu').prepend('<div class="slickLogo"><a href="#"><img src="res/Images/nav/pddBrandmark.png"></a></div>');
             });
         </script>
     </head>
@@ -30,7 +30,7 @@
                 <nav id="mobile_menu"></nav>
                 <nav id="mainNav">
                     <div class="navFlex" id="nLS">
-                        <img src="res/Images/nav/pddBrandmark.png" alt="Premium Design Department Logo" class="navFlexImage">
+                        <a href="#"><img src="res/Images/nav/pddBrandmark.png" alt="Premium Design Department Logo">
                     </div>
                     <div class="navFlex" id="nMS">
                         <ul id="siteUl">

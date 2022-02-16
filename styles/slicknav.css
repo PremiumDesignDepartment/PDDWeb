@@ -127,6 +127,7 @@
   .slicknav_nav img{
     padding: 0px;
     margin-top: -2em;
+    margin-left: -1em;
   }
   .slicknav_nav img.slickTop{
     margin-top: 0;
