@@ -7,39 +7,68 @@
         <title>Premium Design Department</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css" />
         <link rel="shortcut icon" href="res/Images/nav/favicon.ico?">
         <link rel="stylesheet" href="https://use.typekit.net/voe0vir.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
     </head>
 
     <body>
         <main id="hMain">
+            <header>
+                <nav id="mobile_menu"></nav>
+                <nav id="mainNav">
+                    <div class="navFlex" id="nLS">
+                        <img src="res/Images/nav/pddBrandmark.png" alt="Premium Design Department Logo" class="navFlexImage">
+                    </div>
+                    <div class="navFlex" id="nMS">
+                        <ul id="siteUl">
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li class = "lastLink"><a href="resume.html">Resume</a></li>
+                        </ul>
+                    </div>
+                    <div class="navFlex" id="nSS">
+                        <ul id="socUL">
+                            <li><a href="https://www.linkedin.com/in/premiumdesigndept/" target="_blank"><img src="res/Images/nav/linkIcon.png" onmouseover="this.src='res/Images/nav/altLinkIcon.png'" onmouseout=" src='res/Images/nav/linkIcon.png'" alt="LinkedIn icon" class="navFlexImage toFront"></a></li>
+                            <li><a href="https://www.behance.net/myroncharles" target="_blank"><img src="res/Images/nav/behanIcon.png" onmouseover="this.src='res/Images/nav/altBehanIcon.png'" onmouseout="src ='res/Images/nav/behanIcon.png'" alt="Behance icon" class="navFlexImage toFront"></a></li>
+                            <li><a href="https://www.instagram.com/premium_design_department/" target="_blank"><img src="res/Images/nav/instaIcon.png" onmouseover="this.src='res/Images/nav/altInstaIcon.png'" onmouseout="src='res/Images/nav/instaIcon.png'" alt="Instagram icon" class="navFlexImage toFront"></a></li>
+                            <li><a href="https://twitter.com/PrimoDesignDept" target="_blank"><img src="res/Images/nav/twitIcon.png" onmouseover="this.src='res/Images/nav/altTwitIcon.png'" onmouseout="src='res/Images/nav/twitIcon.png'" alt="Twitter icon" class="navFlexImage toFront"></a></li>
+                            <li><a href="mailto:charleme@gmatc.matc.edu" target="_blank"><img src="res/Images/nav/emailIcon.png" onmouseover="this.src='res/Images/nav/altEmailIcon.png'" onmouseout="src='res/Images/nav/emailIcon.png'" alt="Email icon" class="navFlexImage toFront"></a></li> 
+                    </ul> 
+                    </div>
+                </nav>
 
-            <nav id="mainNav">
-                <div class="navFlex" id="nLS">
-                    <img src="res/Images/nav/pddBrandmark.png" alt="Premium Design Department Logo" class="navFlexImage">
-                </div>
-                <div class="navFlex" id="nMS">
-                    <ul id="siteUl">
+                <nav id="nav_menu">
+                    <ul>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li class = "lastLink"><a href="resume.html">Resume</a></li>
+                        <li><a href="resume.html">Resume</a></li>
                     </ul>
-                </div>
-                <div class="navFlex" id="nSS">
-                    <ul id="socUL">
-                        <li><a href="https://www.linkedin.com/in/premiumdesigndept/" target="_blank"><img src="res/Images/nav/linkIcon.png" onmouseover="this.src='res/Images/nav/altLinkIcon.png'" onmouseout=" src='res/Images/nav/linkIcon.png'" alt="LinkedIn icon" class="navFlexImage"></a></li>
-                        <li><a href="https://www.behance.net/myroncharles" target="_blank"><img src="res/Images/nav/behanIcon.png" onmouseover="this.src='res/Images/nav/altBehanIcon.png'" onmouseout="src ='res/Images/nav/behanIcon.png'" alt="Behance icon" class="navFlexImage"></a></li>
-                        <li><a href="https://www.instagram.com/premium_design_department/" target="_blank"><img src="res/Images/nav/instaIcon.png" onmouseover="this.src='res/Images/nav/altInstaIcon.png'" onmouseout="src='res/Images/nav/instaIcon.png'" alt="Instagram icon" class="navFlexImage"></a></li>
-                        <li><a href="https://twitter.com/PrimoDesignDept" target="_blank"><img src="res/Images/nav/twitIcon.png" onmouseover="this.src='res/Images/nav/altTwitIcon.png'" onmouseout="src='res/Images/nav/twitIcon.png'" alt="Twitter icon" class="navFlexImage"> </a></li>
-                        <li><a href="mailto:charleme@gmatc.matc.edu" target="_blank"><img src="res/Images/nav/emailIcon.png" onmouseover="this.src='res/Images/nav/altEmailIcon.png'" onmouseout="src='res/Images/nav/emailIcon.png'" alt="Email icon" class="navFlexImage"></a></li> 
-                </ul> 
-                </div>
-            </nav>
+                    <ul>
+                        <li>Social Media</li>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/premiumdesigndept/" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://www.behance.net/myroncharles" target="_blank">Behance</a></li>
+                                <li><a href="https://www.instagram.com/premium_design_department/" target="_blank">Instagram</a></li>
+                                <li><a href="https://twitter.com/PrimoDesignDept" target="_blank">Twitter</a></li>
+                                <li><a href="mailto:charleme@gmatc.matc.edu" target="_blank">Email</a></li>  
+                            </ul>
+                    </ul>
+                </nav>
+            </header>
 
             
             <div class="mainFlex" id="mainDiv">
-                <div id="textSect">
+                <div id="heading">
                     <h1>Myron Charles</h1>
                     <h2>Graphic Designer</h2>
+                </div>
+                <div id="textSect">
                     <p>I am a graphic designer with a keen eye for design elements and principles. I love to create and construct physical design work, such as dielines/boxes, 
                         signage and accessories. I am experienced with Adobe CC apps, particularly InDesign, Illustrator, and Photoshop; as well as cutting machines, 
                         and 3D printers to prototype and execute my designs.
@@ -49,17 +78,9 @@
                     </figure>
                 </div>  
 
-            <!--   <div id="sScreenDBtn">
-                    <a href="#portfolio"><img src="res/Images/main/downBtn.png" onmouseover="this.src='res/Images/main/altDownBtn.png'" onmouseout="this.src='res/Images/main/downBtn.png'" alt="To portfolio"></a>
-                </div>  -->
-                
                 <div class="sPortrait">
-                    <img src="res/Images/main/sPortrait.png" alt="Myron Charles">
+                    <img src="res/Images/main/sPortrait.png" alt="Myron Charles" class="toBack">
                 </div>
-
-            <!-- <figure id="portFig">
-                    <img src="res/Images/main/sPortrait.png" alt="Myron Charles">
-                </figure> -->
             </div>
 
             <div class="mainFlex" id="portfolio">
